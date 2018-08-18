@@ -1,0 +1,35 @@
+package javaapplication11;
+
+import java.util.Scanner;
+
+
+
+/**
+ *
+ * @author Ali
+ */
+public class JavaApplication11 {
+
+    /**
+     * @param args the command line arguments
+     */
+// shows that the Number is prime or no
+    public static void main(String[] args) {
+      System.out.println("Please enter the Number!!");
+      int Number; 
+      boolean answer=true;
+      Scanner input=new Scanner(System.in);
+       Number=input.nextInt();
+       for (int i=2;i<(Number/2)+1;i++){
+       if (Number%i==0){
+       answer=false;
+       break;
+        }
+       }
+       if (answer==false)
+       System.out.printf("%d is Not a prime Number !!",Number);
+       else
+       {System.out.printf("%d is a prime Number !!",Number);}
+}
+
+}
